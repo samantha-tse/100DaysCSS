@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-image: linear-gradient(45deg, #d25a2a, #ffaf39);
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 130px;
+  height: 40px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 4px 8px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.minus {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
+.line {
+  height: 2px;
+  width: 18px;
+  background: #E26E6E;
+}
+
+.minus:hover {
+  background: #E26E6E;
+  transition: all 0.3s ease-in-out;
+}
+
+.minus:hover .line {
+  background: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.number {
+  font-weight: bolder;
+  font-size: 20px;
+  color: #6A85A0;
+}
+
+.plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
+.line-h {
+  height: 2px;
+  width: 18px;
+  background: #8ED273;
+}
+
+.line-v {
+  position: absolute;
+  background: #8ED273;
+  width: 2px;
+  height: 18px;
+}
+
+.plus:hover {
+  background: #8ED273;
+  transition: all 0.3s ease-in-out;
+}
+
+.plus:hover .line-h {
+  background: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.plus:hover .line-v {
+  background: white;
+  transition: all 0.3s ease-in-out;
+}
