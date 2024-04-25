@@ -1,0 +1,133 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: linear-gradient(45deg,rgb(237,189,107),rgb(202,124,78));
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+	height: 299px;
+	width: 320px;
+	background: #fff;
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+	color: rgb(120,100,80);
+	display: flex;
+}
+
+.main {
+	width: 200px;
+	height: 320px;
+	text-align: center;
+	padding-top: 30px;
+}
+
+img {
+	border-radius: 50%;
+}
+
+.button {
+	width: 120px;
+	height: 30px;
+	margin: 0 auto 10px auto;
+	padding-top: 8px;
+	background: none;
+	border: 1px solid #786450;
+	border-radius: 15px;
+	font-size: 12px;
+	font-weight: 600;
+	box-sizing: border-box;
+	transition: all 0.3s ease-in-out;
+	color: #786450;
+}
+
+.button:hover {
+	transition: all 0.3s ease-in-out;
+	background: #786450;
+	color: white;
+}
+
+.side-bar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.numbers {
+	margin-top: 30px;
+}
+
+.box {
+	width: 120px;
+	height: 98.5px;
+	background: #F5E8DF;
+	text-align: center;
+	transition: all 0.4s ease-in-out;
+}
+
+.box:hover {
+	background: #E1CFC2;
+	transition: all 0.4s ease-in-out;
+}
+
+p {
+	font-size: 12px;
+	margin-top: -20px;
+}
+
+.va {
+	margin-bottom: 35px;
+}
+
+.circle-1, .circle-2 {
+    position: absolute;
+    box-sizing: border-box;
+    width: 76px;
+    height: 76px;
+    top: 27px;
+    left: 62px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #786450 #786450 #786450 transparent;
+    border-radius: 50%;
+		transition: all 1.5s ease-in-out;
+}
+
+.circle-2 {
+	width: 82px;
+	height: 82px;
+	top: 24px;
+	left: 59px;
+	border-color: #786450 transparent #786450 #786450;
+	z-index: 10;
+}
+
+.pfp:hover .circle-1 {
+	transform: rotate(360deg);
+}
+
+.pfp:hover .circle-2 {
+	transform: rotate(-360deg);
+}
