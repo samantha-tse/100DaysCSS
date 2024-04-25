@@ -1,0 +1,94 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: linear-gradient(45deg, rgb(67,57,159), rgb(78,197,202));
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%,-50%);
+	color: white;
+	text-align: justify;
+}
+
+.numbers {
+	display: flex;
+	flex-direction: row;
+	width: 250px;
+  transform: translate(-10%,0%);
+	margin-bottom: 6px;
+}
+
+.head {
+	height: 40px;
+	width: 20px;
+	background: #fff;
+	border-radius: 3px;
+	transform: translate(50%, -2%) rotate(50deg); /* Combine translate and rotate */
+	box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+	z-index: 2;
+}
+
+
+.stem {
+	height: 100px;
+	width: 24px;
+	background: #fff;
+	border-radius: 3px;
+	box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+	z-index: 3;
+  transform: translate(20%,0%);
+}
+
+.o {
+	box-sizing: border-box;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	border: 24px solid #fff;
+	box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+}
+
+#first {
+	z-index: 1;
+}
+
+#second {
+	z-index: 0;
+  transform: translate(-18%,0%);
+}
+
+.days {
+	font-size: 82px;
+	line-height: 60px;
+	font-weight: 700;
+  font-family: 'Courier New', monospace;
+}
+
+.css-challenge {
+	font-size: 23px;
+	line-height: 20px;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+  font-family: 'Courier New', monospace;
+}
